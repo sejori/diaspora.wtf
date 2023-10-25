@@ -19,6 +19,17 @@
     details { padding: 10px; }
     summary { color: #f5da55; font-size: 1.2rem; }
     p { background-color: #f5da55; }
+
+    #map {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   </style>
 </head>
 <body>
@@ -33,7 +44,18 @@
     </details>
   </div>
   <p></p>
-  <div id="map" style="position: absolute; height: 100%; width: 100%; top: 0; left: 0;"></div>
+  <div id="map">
+    <p id="loading"><strong>Loading</strong></p>
+  </div>
   <script src="globe.ts" type="module"></script>
+  <script type="module">
+    const loading = document.querySelector("#loading")
+    while (loading.style.display !== "none") {
+      loading.textContent = loading.textContent.slice(-3) === "..."
+        ? loading.textContent.slice(0, -2)
+        : loading.textContent + ".";
+      await new Promise(res => setTimeout(res, 500));
+    }
+  </script>
 </body>
 </html>

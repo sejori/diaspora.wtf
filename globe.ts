@@ -2,6 +2,7 @@ import data from "./world.json" assert { type: "json" };
 
 if (globalThis.document) {
   const d3 = await import("https://esm.sh/d3@7.8.5?bundle");
+  (globalThis.document.querySelector("#loading")as HTMLElement).style.display = "none";
 
   const width = d3.select("#map").node().getBoundingClientRect().width;
   const height = d3.select("#map").node().getBoundingClientRect().height;
