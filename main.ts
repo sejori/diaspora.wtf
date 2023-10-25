@@ -1,5 +1,6 @@
 import * as Peko from "https://deno.land/x/peko@2.1.0/mod.ts";
 import { bundle } from "https://deno.land/x/emit/mod.ts";
+// import "./globe.ts";
 
 const router = new Peko.Router();
 
