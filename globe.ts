@@ -1,6 +1,5 @@
-import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
+import * as d3 from "https://esm.sh/d3@7";
 import data from "./world.json" assert { type: "json" };
-
 
 if (globalThis.document) {
   const width = d3.select("#map").node().getBoundingClientRect().width;

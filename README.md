@@ -1,12 +1,12 @@
 # Diaspora.WTF!
 
-Did you know that people move? Of course you did, it's natural!
+Did you know that people move? Of course you did...
 
-Modern life encourage a sedentary lifestyle but this is not how humans have behaved throughout history. 
+This website aims to demonstrate that the sedentary lifestyle encouraged by modern life and national borders is not how humans have behaved throughout history.
 
-This web application aims to showcase and encourage movement by visualising human diasporas from past to present. 
+There is no intention to glorify colonialism, human conflict or climate change.
 
-**Note:** Many human migrations are the result of conflict and climate change. This project does not aim to glorify such events nor does it condone conflict of any form. Any political statement attributed to this project can be summarised by the following: _People should be free to move as like, with respect to others._
+People should be free to move as they like, with respect to others...
 
 ## Resources
 
