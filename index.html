@@ -10,11 +10,27 @@
       background-color: #182030;
       height: 100%;
       width: 100%;
+      text-align: center;
+      font-family: 'Courier New', Courier, monospace;
+      padding: 10px;
     }
+    * { box-sizing: border-box; }
+    /* p, summary { text-align: start; } */
   </style>
 </head>
 <body>
-  <div id="map" style="height: 100%; width: 100%;"></div>
+  <div style="position: absolute; width: 100%; z-index: 100; top: 0; left: 0;">
+    <h1>Diaspora.WTF!</h1>
+    <details style="max-width: 800px; margin: auto;">
+      <summary>About</summary>
+      <p>Did you know that people move? Of course you did...</p>
+      <p>This website aims to demonstrate that the sedentary lifestyle encouraged by modern life and national borders is not how humans have behaved throughout history.</p>
+      <p>There is no intention to glorify colonialism, human conflict or climate change.</strong></p>
+      <p><i>People should be free to move as they like, with respect to others.</i></p>
+    </details>
+  </div>
+  <p></p>
+  <div id="map" style="position: absolute; height: 100%; width: 100%; top: 0; left: 0;"></div>
   <script src="globe.ts"></script>
 </body>
 </html>
