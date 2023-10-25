@@ -21,7 +21,7 @@ const svg = d3.select("#map")
   .attr("height", height);
 
 const globe = svg.append("circle")
-  .attr("fill", "#EEE")
+  .attr("fill", "#ccc")
   // .attr("stroke", "#000")
   // .attr("stroke-width", "0.2") - remove stroke so no borders
   .attr("cx", width/2)
