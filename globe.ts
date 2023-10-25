@@ -1,7 +1,8 @@
-import * as d3 from "https://esm.sh/d3@7";
 import data from "./world.json" assert { type: "json" };
 
 if (globalThis.document) {
+  const d3 = await import("https://esm.sh/d3@7.8.5?bundle");
+
   const width = d3.select("#map").node().getBoundingClientRect().width;
   const height = d3.select("#map").node().getBoundingClientRect().height;
   const sensitivity = 75;
@@ -70,7 +71,7 @@ if (globalThis.document) {
     const rotate = projection.rotate()
     const k = sensitivity / projection.scale()
     projection.rotate([
-      rotate[0] - 1 * k,
+      rotate[0] + 0.2 * k,
       rotate[1]
     ])
     path = d3.geoPath(projection, null)

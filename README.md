@@ -6,7 +6,7 @@ This website aims to demonstrate that the sedentary lifestyle encouraged by mode
 
 There is no intention to glorify colonialism, human conflict or climate change.
 
-People should be free to move as they like, with respect to others...
+_People should be free to move as they like, with respect to others..._
 
 ## Resources
 
